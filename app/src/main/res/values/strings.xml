@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MOBILE APP</string>
+    <string name="Main_username">Username:</string>
+    <string name="Main_password">Password:</string>
+    <string name="Ara_mail">MAIL</string>
+    <string name="Ara_userlist">USER LIST</string>
+    <string name="Ara_userdetail">USER DETAILS</string>
+    <string name="Ara_usernotes">USER NOTES</string>
+    <string name="Ara_sesnsorlist">SENSOR LIST</string>
+    <string name="Notes_title">NOTE LIST</string>
+    <string name="Notes_show_button">SHOW</string>
+    <string name="Notes_add_button">ADD NEW NOTE</string>
+    <string name="Notes_delete_button">DELETE</string>
+    <string name="Notes_File_Name">File Name</string>
+    <string name="save_button">SAVE</string>
+    <string name="back_button">BACK</string>
+    <string name="send_button">SEND</string>
+    <string name="User_detail_username">Username:</string>
+    <string name="User_detail_gender">Gender:</string>
+    <string name="User_detail_theme">App Theme:</string>
+    <string name="User_detail_language">Language:</string>
+    <string name="User_detail_age">Age:</string>
+    <string name="User_detail_weight">Weight:</string>
+    <string name="User_detail_height">Height:</string>
+
+
+</resources>
