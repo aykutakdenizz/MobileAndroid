@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class AraActivity extends AppCompatActivity {
-    private Button mailButton,userListButton,userDetailsButton,userNoteButton,sensorListButton;
+    private Button mailButton,userListButton,userDetailsButton,userNoteButton,sensorListButton,asyncButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,8 @@ public class AraActivity extends AppCompatActivity {
         userDetailsButton = (Button) findViewById(R.id.userDetailsButton);
         userNoteButton = (Button) findViewById(R.id.userNoteButton);
         sensorListButton = (Button) findViewById(R.id.sensorListButton);
+        asyncButton = (Button) findViewById(R.id.araAsyncTask);
+
     }
     private  void setClickListeners(){
         mailButton.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +62,13 @@ public class AraActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent sensorListIntent = new Intent(AraActivity.this,LightSensorActivity.class);
                 startActivity(sensorListIntent);
+            }
+        });
+        asyncButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent asyncIntent = new Intent(AraActivity.this,AsyncTaskActivity.class);
+                startActivity(asyncIntent);
             }
         });
     }

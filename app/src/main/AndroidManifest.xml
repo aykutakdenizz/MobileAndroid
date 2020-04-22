@@ -3,6 +3,8 @@
     package="com.example.myapplication1321">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AlarmActivity"></activity>
+        <activity android:name=".AsyncTaskActivity" />
         <activity android:name=".NoteListActivity" />
         <activity android:name=".AraActivity" />
         <activity android:name=".LightSensorActivity" />
@@ -24,11 +28,12 @@
         <activity android:name=".MailActivity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".UserDetailActivity" />
+
         <receiver android:name=".BroadcastReceiverClass">
             <intent-filter>
-                <action android:name="android.intent.action.PHONE_STATE"></action>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
-
         </receiver>
     </application>
 
