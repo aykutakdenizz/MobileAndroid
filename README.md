@@ -1,4 +1,6 @@
 # MobileAndroid
+Ödev-3 için youtube linki:https://youtu.be/isjRaX_Pz1k
+
 Kullanıcılar:
 
 username:aykut  , password: 123
