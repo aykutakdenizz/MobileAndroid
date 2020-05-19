@@ -15,7 +15,7 @@
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
                 <LinearLayout
@@ -70,7 +70,7 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
                 <LinearLayout
@@ -126,7 +126,7 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
                 <LinearLayout
@@ -153,13 +153,143 @@
                         android:textStyle="bold"
                         android:background="#C4D5FF"/>
                 </LinearLayout>
-
-                <Button
-                    android:id="@+id/araAsyncTask"
+                <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:visibility="visible"/>
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/araAsyncTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:background="@drawable/async_icon"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text="ASYNC DOWNLOAD"
+                        android:gravity="center"
+                        android:textColor="#000831"
+                        android:textStyle="bold"
+                        android:background="#C4D5FF"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/alarmActivityButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:background="@drawable/alarm_icon"
+                        android:gravity="bottom|center_horizontal"
+                        >
+                    </Button>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text="SET ALARM"
+                        android:gravity="center"
+                        android:textColor="#000831"
+                        android:textStyle="bold"
+                        android:background="#C4D5FF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/AraLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:background="@drawable/location"
+                        android:gravity="bottom|center_horizontal"
+                        >
+                    </Button>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text="LOCATION"
+                        android:gravity="center"
+                        android:textColor="#000831"
+                        android:textStyle="bold"
+                        android:background="#C4D5FF"
+                        android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/CounterButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:background="@drawable/sitting"
+                        android:gravity="bottom|center_horizontal"
+                        >
+                    </Button>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text="COUNTER"
+                        android:gravity="center"
+                        android:textColor="#000831"
+                        android:textStyle="bold"
+                        android:background="#C4D5FF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:visibility="invisible"
+                        android:gravity="bottom|center_horizontal"
+                        >
+                    </Button>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text="Location"
+                        android:gravity="center"
+                        android:textColor="#000831"
+                        android:textStyle="bold"
+                        android:background="#C4D5FF"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 

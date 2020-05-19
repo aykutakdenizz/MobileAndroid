@@ -6,13 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AsyncTaskActivity">
+    tools:context=".AsyncTaskActivity"
+    android:padding="20dp">
 
     <Button
         android:id="@+id/asyncTaskButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="DOWNLOAD"
+        android:background="@drawable/shape_green"
+        android:layout_gravity="center"
         />
     <ImageView
         android:layout_width="wrap_content"

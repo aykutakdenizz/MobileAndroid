@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AlarmActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#2E77FD"
+        android:gravity="center"
+        android:text="Please enter alarm..."
+        android:textColor="#FFFFFF"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#C4D5FF"
+                android:gravity="center"
+                android:text="Hour"
+                android:textColor="#000831"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/AlarmHour"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#D5E1FF"
+                android:gravity="center"
+                android:hint="Please enter Hour"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#C4D5FF"
+                android:gravity="center"
+                android:text="Minute"
+                android:textColor="#000831"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/alarmMinute"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#D5E1FF"
+                android:gravity="center"
+                android:hint="Please enter Minute"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Alarmpicker"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_blue"
+        android:text="Add Time" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/AlarmButtonOff"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/alarm_off" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/AlarmButtonOn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/alarm_on" />
+
+    </LinearLayout>
+
+</LinearLayout>

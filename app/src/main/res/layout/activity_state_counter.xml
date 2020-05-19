@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StateCounterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sit_counter"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#010141"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="COUNTER"/>
+        <TextView
+            android:id="@+id/counterCounter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#010141"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="0"
+            />
+        <Button
+            android:id="@+id/counterReset"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="RESET"
+            android:background="@drawable/shape_red"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

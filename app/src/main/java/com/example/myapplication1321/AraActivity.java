@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class AraActivity extends AppCompatActivity {
-    private Button mailButton,userListButton,userDetailsButton,userNoteButton,sensorListButton,asyncButton;
+    private Button mailButton,userListButton,userDetailsButton,userNoteButton,sensorListButton,
+            asyncButton,alarmActivityButton,AraLocation,CounterButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,9 @@ public class AraActivity extends AppCompatActivity {
         userNoteButton = (Button) findViewById(R.id.userNoteButton);
         sensorListButton = (Button) findViewById(R.id.sensorListButton);
         asyncButton = (Button) findViewById(R.id.araAsyncTask);
-
+        alarmActivityButton = (Button) findViewById(R.id.alarmActivityButton);
+        AraLocation = (Button) findViewById(R.id.AraLocation);
+        CounterButton = (Button) findViewById(R.id.CounterButton);
     }
     private  void setClickListeners(){
         mailButton.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +72,27 @@ public class AraActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent asyncIntent = new Intent(AraActivity.this,AsyncTaskActivity.class);
                 startActivity(asyncIntent);
+            }
+        });
+        alarmActivityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sensorListIntent = new Intent(AraActivity.this,AlarmActivity.class);
+                startActivity(sensorListIntent);
+            }
+        });
+        AraLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sensorListIntent = new Intent(AraActivity.this,LocationActivity.class);
+                startActivity(sensorListIntent);
+            }
+        });
+        CounterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sensorListIntent = new Intent(AraActivity.this,StateCounterActivity.class);
+                startActivity(sensorListIntent);
             }
         });
     }

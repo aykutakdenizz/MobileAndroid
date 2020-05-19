@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
+import android.media.MediaPlayer;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +22,7 @@ public class AsyncTaskActivity extends AppCompatActivity {
     ImageView imageView= null;
     ProgressDialog processDialog;
     int progressInt = 0;
+    MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,7 @@ public class AsyncTaskActivity extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
             processDialog = new ProgressDialog(AsyncTaskActivity.this);
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.juntos);
             processDialog.setMessage("Starting ...");
             processDialog.setIndeterminate(true);
             processDialog.setCancelable(false);
@@ -60,12 +65,11 @@ public class AsyncTaskActivity extends AppCompatActivity {
                     publishProgress(progressInt);
                 }
                 try {
-                    sleep(250);
+                    sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-
             return new Integer(100);
         }
         protected void onProgressUpdate(Integer... progress) {
@@ -80,9 +84,12 @@ public class AsyncTaskActivity extends AppCompatActivity {
             if(integer >= 100) {
                 processDialog.hide();
                 imageView.setImageResource(R.drawable.avatar1);
+                mediaPlayer.start();
+                progressInt = 0;
             }else {
                 processDialog.show();
             }
         }
     }
+
 }
